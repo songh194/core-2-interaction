@@ -49,8 +49,24 @@ body {
 .long:hover::after {
     content: "oooooooooOOOoooOOoooOOOOOOooOOooo";
 }
+.longdots:hover::after {
+    content:"............................................................................................................................................................................................................................................................................................................................................................................"
+}
+.periodclap:hover::after {
+    content: ".";
+}
+.PERIOD:hover::after {
+    content: "(PERIOD)";
+}
+.question1:hover::after {
+    content: "..?";
+}
+.question2:hover::after {
+    content: "..????";
+}
 
 
+/* a */
 a {
     color:black;
     text-decoration: none;
@@ -60,6 +76,9 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
+/* navigation */
 .nextpage {
     font-size: 2em;
     text-align: right;
@@ -69,3 +88,4 @@ a:hover {
     text-decoration: none;
     color:rgb(0, 151, 104);
 }
+
