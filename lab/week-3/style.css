@@ -1,0 +1,35 @@
+body {
+    font-family: "Sono", monospace;
+    background: rgb(255,255,255);
+    background: linear-gradient(97deg, rgba(255,255,255,1) 24%, rgba(217,210,192,1) 100%);
+}
+h1 {
+    font-family: "Rubik Mono One", monospace;
+    background-color:rgb(255, 191, 71);
+    padding:10px
+}
+h3 {
+    font-weight: 300;
+    margin-bottom: -1.2em;
+    color:white;
+    background-color: rgb(36, 21, 96);
+    padding: 10px;
+}
+h4 {
+    font-size: larger;
+    color:rgb(36, 21, 96);
+}
+
+img {
+    width: 100%;
+}
+figcaption {
+    color:gray;
+    margin-top: 0.5em;
+}
+.quote {
+    font-weight: 700;
+    font-size: larger;
+    color:rgb(36, 21, 96);
+
+}

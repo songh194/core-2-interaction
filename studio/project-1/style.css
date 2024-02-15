@@ -15,54 +15,76 @@ body {
 
 .thatarenot:hover::after {
     content:"......,,,,,,,.,,";
+    color:rgb(0, 151, 104);
+
 }
 
 .questionmark:hover::after {
     content: "..????!???!!";
+    color:rgb(0, 151, 104);
+
 }
 .dots:hover::after {
     content:"........";
+    color:rgb(0, 151, 104);
+
 }
 .commas:hover::after {
     content: ",,,,,,,,";
+    color:rgb(0, 151, 104);
+
 }
 
 .questionisaquestion:hover::after {
-    content: " is a question is a question is a question is a question is a question";
+    content: " is a question is a question is a question is a question is a question is a question is a question is a question is a question is a question is a question is a question is a question";
+    color:rgb(0, 151, 104);
 }
 .exclamation:hover::after {
     content:"!!!!!?!!!";
+    color:rgb(0, 151, 104);
+
 }
 
 .quote:hover::before {
-    content:'"'
+    content:'"';
+    color:rgb(0, 151, 104);
+
 }
 .quote:hover::after {
     content:'"';
+    color:rgb(0, 151, 104);
 }
 .revolting:hover::after {
     content: "へ[ ᴼ ▃ ᴼ ]_/¯";
+    color:rgb(0, 151, 104);
 }
 .weakness:hover::after {
     content:"(or its weakness' weakness)";
+    color:rgb(0, 151, 104);
 }
 .long:hover::after {
     content: "oooooooooOOOoooOOoooOOOOOOooOOooo";
+    color:rgb(0, 151, 104);
 }
 .longdots:hover::after {
-    content:"............................................................................................................................................................................................................................................................................................................................................................................"
+    content:"............................................................................................................................................................................................................................................................................................................................................................................";
+    color:rgb(0, 151, 104);
 }
 .periodclap:hover::after {
     content: ".";
+    color:rgb(0, 151, 104);
 }
 .PERIOD:hover::after {
     content: "(PERIOD)";
+    color:rgb(0, 151, 104);
 }
 .question1:hover::after {
     content: "..?";
+    color:rgb(0, 151, 104);
 }
 .question2:hover::after {
     content: "..????";
+    color:rgb(0, 151, 104);
 }
 
 
@@ -73,7 +95,6 @@ a {
 }
 a:hover {
     color:rgb(0, 151, 104);
-    text-decoration: underline;
 }
 
 
@@ -89,3 +110,21 @@ a:hover {
     color:rgb(0, 151, 104);
 }
 
+
+/* easter egg pages */
+.box {
+    border-radius: 5px solid black;
+    h3 {
+        font-weight: 100;
+        font-style: italic;
+        margin-top: -1em;
+    }
+    h2 {
+        font-weight: 100;
+        font-size: 1em;
+        margin-top: -1em;
+    }
+    .description {
+    }
+
+}
