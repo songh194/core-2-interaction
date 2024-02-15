@@ -1,0 +1,47 @@
+body {
+    font-family: 'VT323', monospace;
+    margin: 4em;
+    margin-top: 10em;
+    text-align: center;
+    color:white;
+    background-color: rgb(0, 151, 104);
+}
+h1 {
+    font-weight: 100;
+    font-size: 8em;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 12em;
+    margin: 0;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+
+.blink{
+    -webkit-animation: 
+      1.5s linear infinite blinky-effect; 
+    animation: 1.5s linear infinite blinky-effect;
+}
+ 
+
+@keyframes blinky-effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+

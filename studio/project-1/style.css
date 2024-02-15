@@ -1,0 +1,71 @@
+body {
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+    width: 95%;
+    margin: auto;
+}
+
+.italic:hover {
+    font-style: italic;
+}
+.strong:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.thatarenot:hover::after {
+    content:"......,,,,,,,.,,";
+}
+
+.questionmark:hover::after {
+    content: "..????!???!!";
+}
+.dots:hover::after {
+    content:"........";
+}
+.commas:hover::after {
+    content: ",,,,,,,,";
+}
+
+.questionisaquestion:hover::after {
+    content: " is a question is a question is a question is a question is a question";
+}
+.exclamation:hover::after {
+    content:"!!!!!?!!!";
+}
+
+.quote:hover::before {
+    content:'"'
+}
+.quote:hover::after {
+    content:'"';
+}
+.revolting:hover::after {
+    content: "へ[ ᴼ ▃ ᴼ ]_/¯";
+}
+.weakness:hover::after {
+    content:"(or its weakness' weakness)";
+}
+.long:hover::after {
+    content: "oooooooooOOOoooOOoooOOOOOOooOOooo";
+}
+
+
+a {
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color:rgb(0, 151, 104);
+    text-decoration: underline;
+}
+
+.nextpage {
+    font-size: 2em;
+    text-align: right;
+}
+.nextpage:hover {
+    text-align: right;
+    text-decoration: none;
+    color:rgb(0, 151, 104);
+}
