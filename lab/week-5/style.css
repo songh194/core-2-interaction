@@ -1,0 +1,22 @@
+/* .element {
+    margin-right:40px;
+    display: inline-flex;
+    background-color: chocolate;
+    transition-property: margin-right;
+    transition-duration: 4s;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: fuchsia;
+} */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    width: 100vw;
+}

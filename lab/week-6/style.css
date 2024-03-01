@@ -1,0 +1,50 @@
+body {
+    margin: 2rem;
+}
+
+.header,.footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header {
+    margin-bottom: 1rem;
+}
+.footer {
+    color:lightslategrey;
+    margin-top: 1rem;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    background: url(img4.jpg) green;
+    background-size: contain;
+    padding:2rem;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 3 / 3; }
+    .div2 { grid-area: 1 / 3 / 2 / 4; }
+    .div3 { grid-area: 1 / 4 / 2 / 5; }
+    .div4 { grid-area: 2 / 3 / 3 / 4; }
+    .div5 { grid-area: 2 / 4 / 3 / 5; }
+    .div6 { grid-area: 3 / 1 / 4 / 2; }
+    .div7 { grid-area: 3 / 2 / 4 / 3; }
+    .div8 { grid-area: 3 / 3 / 4 / 4; }
+    .div9 { grid-area: 3 / 4 / 4 / 5; }
+    .div10 { grid-area: 4 / 1 / 5 / 2; }
+    .div11 { grid-area: 5 / 1 / 6 / 2; }
+    .div12 { grid-area: 4 / 2 / 6 / 4; }
+    .div13 { grid-area: 4 / 4 / 5 / 5; }
+    .div14 { grid-area: 5 / 4 / 6 / 5; }
+
+.container img {
+    width: 100%;
+}
+
+

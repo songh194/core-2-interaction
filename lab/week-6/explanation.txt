@@ -1,0 +1,1 @@
+I wanted to create a gallery space using a fairly simple grid system for the images. Grid seemed like a fit because I wanted to manipulate the grid area of each images. Also I put a background image in the grid. For the header and the footer, flex allowed it to be evenly positioned easily with justify-content: space-between. 
