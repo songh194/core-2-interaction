@@ -1,32 +1,29 @@
 body {
     font-family: "Micro 5", sans-serif;
     padding-top: 2em;
-    background-color:wheat;
+    background-color:rgb(207, 104, 104);
     
 }
 
 h1 {
+    font-size: 2em;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 
-/* .collection {
-    padding: 2em;
+.flex {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    align-items: center;
     justify-content: center;
-} */
+}
 
 .collection {
-    border: 2px dashed black;
+
+    border: 5px dashed black;
     background-color: rgb(247, 240, 232);
     display: grid;
     width: 100%;
-    height: 80%;
+    height: 500px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
@@ -49,4 +46,43 @@ h1 {
 }
 img {
     width:60px;
+}
+
+img:hover {
+    border: 5px dashed black;
+}
+
+
+
+.footer {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media all and (min-width:1024px) {
+    img {
+        width: 100px;
+    }
+    .collection {
+        width:60%;
+        padding-right: 4%;
+    }
+    .footer {
+        width:60%;
+    }
+}
+
+@media all and (min-width:700px) {
+    img {
+        width: 80px;
+    }
+    .collection {
+        width:80%;
+        padding-right: 4%;
+    }
+    .footer {
+        width:80%;
+    }
 }
