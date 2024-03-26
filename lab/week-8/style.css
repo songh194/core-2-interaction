@@ -1,0 +1,13 @@
+:root {
+    --blue: rgb(0, 0, 255);
+    --green: rgb(0, 255, 0);
+    --space-sm: 10px;
+}
+
+.my-div {
+    color: var(--green)
+}
+.second-div {
+    color: var(--blue);
+    word-spacing: var(--space-sm);
+}

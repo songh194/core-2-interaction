@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unused postcards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="title">Unused postcards</div>
+        <div class="info"><a href="info.html"><img src="infoButton2.png" alt="Info"></a></div>
+    </div>
+    <div id="container" class="container"></div>
+    
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="popup">
+        <button onclick="closePopup()" class="exitButton">x</button>
+        <!-- front and back img  -->
+        <div id="popupImgContainer" class="popupImgContainer">
+            <div id="frontImage"></div>
+            <div id="backImage"></div>
+        </div>
+        <h2 id="popup-name"></h2><span id="popup-size"></span>
+        <p id="popup-theme"></p>
+        <p id="popup-when"></p>
+        <p id="popup-where"></p>
+        <p id="popup-why"></p>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

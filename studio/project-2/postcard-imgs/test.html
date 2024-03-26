@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Popup</title>
+<style>
+/* CSS for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+
+.popup img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+/* CSS for styling purposes */
+.container {
+    position: relative;
+}
+
+.stacked-image {
+    position: absolute;
+    cursor: pointer;
+}
+
+.stacked-image + .stacked-image {
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container" id="container"></div>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="popup" id="popup">
+    <h2 id="popup-name"></h2>
+    <p id="popup-theme"></p>
+    <p id="popup-when"></p>
+    <p id="popup-where"></p>
+    <p id="popup-why"></p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+let collection = [
+    {
+        "front": "toystroy.jpg",
+        "back": "toystroy-back.jpg",
+        "name": "Disney Toy Story",
+        "theme": "Alien characters (aka. LGM) scene",
+        "when": "2020? 2021?",
+        "where": "Some random store",
+        "why": "I love these little guys."
+    },
+    {
+        "front": "koreanmoderninkpainting.jpg",
+        "back": "koreanmoderninkpainting-back.jpg",
+        "name": "Korean modern Ink painting",
+        "theme": "LEE Yootae, 1994, MMCA",
+        "when": "2021?",
+        "where": "MMCA giftshop",
+        "why": "I got this from a friend."
+    }
+];
+
+let container = document.getElementById("container");
+let overlay = document.getElementById("overlay");
+let popup = document.getElementById("popup");
+
+for (let i = 0; i < collection.length; i++) {
+    let item = collection[i];
+    let itemImage = item.front;
+    let newImage = document.createElement("img");
+    newImage.src = itemImage;
+    newImage.classList.add("stacked-image");
+    newImage.addEventListener("click", function() {
+        openPopup(item);
+    });
+    container.appendChild(newImage);
+
+    let rotationAngle = Math.floor(Math.random() * 10) - 5;
+    newImage.style.transform = `rotate(${rotationAngle}deg)`;
+}
+
+function openPopup(item) {
+    document.getElementById("popup-name").innerText = item.name;
+    document.getElementById("popup-theme").innerText = "Theme: " + item.theme;
+    document.getElementById("popup-when").innerText = "When: " + item.when;
+    document.getElementById("popup-where").innerText = "Where: " + item.where;
+    document.getElementById("popup-why").innerText = "Why: " + item.why;
+    popup.style.display = "block";
+    overlay.style.display = "block";
+}
+
+function closePopup() {
+    popup.style.display = "none";
+    overlay.style.display = "none";
+}
+</script>
+
+</body>
+</html>
