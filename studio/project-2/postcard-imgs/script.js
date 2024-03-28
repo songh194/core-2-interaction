@@ -9,7 +9,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "Accidentally Wes Anderson exhibition",
-        "why ": "This was one of the photos I was attracted to at the exhibition."
+        "why": "This was one of the photos I was attracted to at the exhibition."
     },
     {
         "front": "awa2.jpg",
@@ -21,19 +21,19 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "Accidentally Wes Anderson exhibition",
-        "why ": "This was one of the photos I was attracted to at the exhibition."
+        "why": "This was one of the photos I was attracted to at the exhibition."
     },
     {
         "front": "koreanmoderninkpainting.jpg",
         "back": "koreanmoderninkpainting-back.jpg",
         "name": "Korean modern Ink painting ",
-        "theme": "LEE Yootae, 1994, MMCA ",
+        "theme": "LEE Yootae, 1994",
         "horizontal": "10",
         "vertical": "15",
         "unit": "cm",
         "when": "2021?",
         "where": "MMCA giftshop",
-        "why ": "I got this from a friend. "
+        "why": "I got this from a friend. "
     },
     {
         "front": "cow.jpg",
@@ -45,7 +45,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "twitter?",
-        "why ": "I got this from a friend. "
+        "why": "I got this from a friend. "
     },
     {
         "front": "blur.jpg",
@@ -57,7 +57,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "The meaningless words and kitschy aesthetic "
+        "why": "The meaningless words and kitschy aesthetic "
     },
     {
         "front": "toystroy.jpg",
@@ -69,7 +69,7 @@ let collection = [
         "unit": "cm",
         "when": "2020? 2021?",
         "where": "Some random store",
-        "why ": "I love these little guys. "
+        "why": "I love these little guys. "
     },
     {
         "front": "disneychristmas.jpg",
@@ -81,7 +81,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "daiso ",
-        "why ": "the warmth of the illustration"
+        "why": "the warmth of the illustration"
     },
     {
         "front": "traditional1.jpg",
@@ -93,7 +93,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "beautifully digitally illustrated traditional paintings with vibrant colors. "
+        "why": "beautifully digitally illustrated traditional paintings with vibrant colors. "
     },
     {
         "front": "traditional2.jpg",
@@ -105,7 +105,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "beautifully digitally illustrated traditional paintings with vibrant colors. "
+        "why": "beautifully digitally illustrated traditional paintings with vibrant colors. "
     },
     {
         "front": "traditional3.jpg",
@@ -117,7 +117,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "beautifully digitally illustrated traditional paintings with vibrant colors. "
+        "why": "beautifully digitally illustrated traditional paintings with vibrant colors. "
     },
     {
         "front": "traditional4.jpg",
@@ -129,7 +129,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "beautifully digitally illustrated traditional paintings with vibrant colors. "
+        "why": "beautifully digitally illustrated traditional paintings with vibrant colors. "
     },
     {
         "front": "Cheolhun1.jpg",
@@ -141,7 +141,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "melancholy atmosphere of the illustration"
+        "why": "melancholy atmosphere of the illustration"
     },
     {
         "front": "Cheolhun2.jpg",
@@ -153,7 +153,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "the silliness of it all"
+        "why": "the silliness of it all"
     },
     {
         "front": "hb1.jpg",
@@ -165,11 +165,11 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": " the inconsistency and handmadeness "
+        "why": " the inconsistency and handmadeness "
     },
     {
         "front": "hb2.png",
-        "back": "dali1.jpg",
+        "back": "hb2-back.png",
         "name": "HB 2",
         "theme": "Abstract window view painting ",
         "horizontal": "18",
@@ -177,7 +177,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "crafts exhibition in suwon",
-        "why ": "the use of color and abstract shapes"
+        "why": "the use of color and abstract shapes"
     },
     {
         "front": "dali1.jpg",
@@ -189,7 +189,7 @@ let collection = [
         "unit": "cm",
         "when": "2022",
         "where": "Salvador Dalí: Imagination and Reality exhibition",
-        "why ": "Seeing this in person made me want to buy the postcard."
+        "why": "Seeing this in person made me want to buy the postcard."
     },
     {
         "front": "dali2.jpg",
@@ -201,7 +201,7 @@ let collection = [
         "unit": "cm",
         "when": "2022",
         "where": "Salvador Dalí: Imagination and Reality exhibition",
-        "why ": "Seeing this in person made me want to buy the postcard."
+        "why": "Seeing this in person made me want to buy the postcard."
     },
     {
         "front": "dali3.jpg",
@@ -213,7 +213,7 @@ let collection = [
         "unit": "cm",
         "when": "2022",
         "where": "Salvador Dalí: Imagination and Reality exhibition",
-        "why ": "Seeing this in person made me want to buy the postcard."
+        "why": "Seeing this in person made me want to buy the postcard."
     },
     {
         "front": "sizaksa1.jpg",
@@ -225,7 +225,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa2.jpg",
@@ -237,7 +237,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
 
     {
@@ -250,7 +250,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa4.jpg",
@@ -262,7 +262,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa5.jpg",
@@ -274,7 +274,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa6.jpg",
@@ -286,7 +286,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa7.jpg",
@@ -298,7 +298,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa8.jpg",
@@ -310,7 +310,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa9.jpg",
@@ -322,7 +322,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa10.jpg",
@@ -334,7 +334,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa11.jpg",
@@ -346,7 +346,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "sizaksa12.jpg",
@@ -358,7 +358,7 @@ let collection = [
         "unit": "cm",
         "when": "2021",
         "where": "online",
-        "why ": "I love the artist's style of drawing animals in water color. "
+        "why": "I love the artist's style of drawing animals in water color. "
     },
     {
         "front": "Themet.jpg",
@@ -370,7 +370,7 @@ let collection = [
         "unit": "cm",
         "when": "2023",
         "where": "The Met giftshop",
-        "why ": "I was struck by the cuteness of the hippo. I just also love ancient Egyptian art."
+        "why": "I was struck by the cuteness of the hippo. I just also love ancient Egyptian art."
     },
     {
         "front": "pride.jpg",
@@ -382,7 +382,7 @@ let collection = [
         "unit": "cm",
         "when": "2022",
         "where": "Korean Pride 2022",
-        "why ": "I love the illustration. It was one of the things I got from booths selling goods at Pride. "
+        "why": "I love the illustration. It was one of the things I got from booths selling goods at Pride. "
     },
     {
         "front": "chungkingexpress1.jpg",
@@ -394,7 +394,7 @@ let collection = [
         "unit": "cm",
         "when": "2022",
         "where": "Twitter",
-        "why ": "This is a fanmade merch of Chungking Express. I adore the movie."
+        "why": "This is a fanmade merch of Chungking Express. I adore the movie."
     },
     {
         "front": "chungkingexpress2.jpg",
@@ -406,7 +406,7 @@ let collection = [
         "unit": "cm",
         "when": "2022",
         "where": "Twitter",
-        "why ": "This is a fanmade merch of Chungking Express. I adore the movie."
+        "why": "This is a fanmade merch of Chungking Express. I adore the movie."
     },
     {
         "front": "H7L.jpg",
@@ -418,7 +418,7 @@ let collection = [
         "unit": "cm",
         "when": "2024",
         "where": "Bookstore on St. Marks",
-        "why ": "I got this when I bought a zine from the bookstore. "
+        "why": "I got this when I bought a zine from the bookstore. "
     },
     {
         "front": "Polish-painting.jpg",
@@ -430,11 +430,11 @@ let collection = [
         "unit": "cm",
         "when": "?",
         "where": "National Museum of Korea",
-        "why ": "I honestly can't why or when I bought this postcard. It says the exhibition was in 2015 but I might've gotten it sometime later, I have no idea."
+        "why": "I honestly can't whyor when I bought this postcard. It says the exhibition was in 2015 but I might've gotten it sometime later, I have no idea."
     },
     {
         "front": "Nationalmuseum2.jpg",
-        "back": "Nationalmuseum2-back.jpg",
+        "back": "Nationalmuseum2-back-rotate.jpg",
         "name": "National museum 2",
         "theme": "Great Gilt-bronze Incense Burner of Baekje",
         "horizontal": "11.5",
@@ -442,7 +442,7 @@ let collection = [
         "unit": "cm",
         "when": "2023",
         "where": "National Museum giftshop",
-        "why ": "I enjoyed seeing Buddhist objects from the museum. "
+        "why": "I enjoyed seeing Buddhist objects from the museum. "
     },
     {
         "front": "cats.jpg",
@@ -454,7 +454,7 @@ let collection = [
         "unit": "cm",
         "when": "2022?",
         "where": "Some random store",
-        "why ": "Cats like sausages!"
+        "why": "Cats like sausages!"
     },
 
     {
@@ -467,11 +467,11 @@ let collection = [
         "unit": "cm",
         "when": "2022?",
         "where": "Some random store",
-        "why ": "Dogs like sausages!"
+        "why": "Dogs like sausages!"
     },
     {
         "front": "dinosaur.jpg",
-        "back": "dinosaur-back.jpg",
+        "back": "dinosaur-back-rotate.jpg",
         "name": "Dinosaur ",
         "theme": "\"wooooooork\" bus with a dinosaur",
         "horizontal": "10",
@@ -479,7 +479,7 @@ let collection = [
         "unit": "cm",
         "when": "2021? 2022?",
         "where": "A museum giftshop?",
-        "why ": "I love the silly little dinosaur."
+        "why": "I love the silly little dinosaur."
     },
     {
         "front": "Nationalmuseum1.jpg",
@@ -491,11 +491,11 @@ let collection = [
         "unit": "cm",
         "when": "2023",
         "where": "National Museum giftshop",
-        "why ": "It's an iconic piece of art."
+        "why": "It's an iconic piece of art."
     },
     {
         "front": "harrypotter1.jpg",
-        "back": "harrypotter1-back.jpg",
+        "back": "harrypotter1-back-rotate.jpg",
         "name": "Harry Potter 1",
         "theme": "Honeydukes",
         "horizontal": "9.5",
@@ -503,11 +503,11 @@ let collection = [
         "unit": "cm",
         "when": "2021? 2023?",
         "where": "Cinema giftshop?",
-        "why ": "My obsession with Harry Potter must've been there. I was eager to get merch on my hands..."
+        "why": "My obsession with Harry Potter must've been there. I was eager to get merch on my hands..."
     },
     {
         "front": "harrypotter2.jpg",
-        "back": "harrypotter2-back.jpg",
+        "back": "harrypotter1-back-rotate.jpg",
         "name": "Harry Potter 2",
         "theme": "The vanishing cabinet",
         "horizontal": "9.5",
@@ -515,11 +515,11 @@ let collection = [
         "unit": "cm",
         "when": "2021? 2023?",
         "where": "Cinema giftshop?",
-        "why ": "My obsession with Harry Potter must've been there. I was eager to get merch on my hands..."
+        "why": "My obsession with Harry Potter must've been there. I was eager to get merch on my hands..."
     },
     {
         "front": "newyorktwa.jpg",
-        "back": "newyorktwa-back.jpg",
+        "back": "newyorktwa-back-rotate.jpg",
         "name": "new york twa ",
         "theme": "twa airline poster ",
         "horizontal": "10",
@@ -527,7 +527,7 @@ let collection = [
         "unit": "cm",
         "when": "2024",
         "where": "Poster house",
-        "why ": "I loved seeing this poster in person."
+        "why": "I loved seeing this poster in person."
     }
 ];
 
@@ -553,14 +553,27 @@ for (let i = 0; i < collection.length; i++) {
 
 
 function openPopup(item) {
+    let frontImage = document.createElement("img");
+    frontImage.src = item.front;
+    frontImage.classList.add("popup-image");
+    document.getElementById("popup-front").innerHTML = "";
+    document.getElementById("popup-front").appendChild(frontImage);
+
+    let backImage = document.createElement("img");
+    backImage.src = item.back;
+    backImage.classList.add("popup-image");
+    document.getElementById("popup-back").innerHTML = ""; 
+    document.getElementById("popup-back").appendChild(backImage);
 
     document.getElementById("popup-name").innerText = item.theme;
     document.getElementById("popup-size").innerText = item.horizontal+ "×" + item.vertical + item.unit;
     document.getElementById("popup-when").innerText = "When did I get it: " + item.when;
     document.getElementById("popup-where").innerText = "Where did I get it: " + item.where;
-    document.getElementById("popup-why").innerText = "Why did I get it: " + item.why;
+    document.getElementById("popup-why").innerText = "why did I get it: " + item.why;
     popup.style.display = "block";
     overlay.style.display = "block";
+    frontImage.style.transform = "rotate(-4deg)";
+    backImage.style.transform = "rotate(4deg)";
 }
 
 function closePopup() {
