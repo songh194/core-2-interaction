@@ -22,7 +22,9 @@ body {
     background-image: url(letterbg.jpeg);
     background-size: cover;
     box-shadow: 1em black;
+    transform: rotate(2deg)
 }
+
 .letter {
     display: flex;
     justify-content: center;
@@ -31,11 +33,12 @@ body {
 }
 
 a {
-    color: black;
+    color: black;    
     text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    opacity: 70%;
 }
 
 #container {
@@ -48,8 +51,8 @@ a:hover {
 #container img {
     height:240px;
     width:auto;
-    cursor: pointer;
     margin-top: -2rem;
+    cursor:pointer;
 }
 
 .stacked-image {
@@ -60,23 +63,22 @@ a:hover {
 
 .popup {
     display: none;
-    display: grid;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-image: url(whitebg.jpeg);
-    background-size: cover;
-    border: 1px solid #ccc;
     z-index: 9999;
-    width:90vw;
-    height:90vh;
+    width:80vw;
+    height:80vh;
     font-family: "Gideon Roman", serif;
+    line-height: 0.7rem;
 }
 
 .popup img {
-    max-width: 100%;
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
     height: auto;
 }
 
@@ -91,9 +93,7 @@ a:hover {
     z-index: 9998;
 }
 
-.exitbutton {
-    align-self:flex-end;
-}
+
 
 #popupImgContainer {
     display: flex;
@@ -102,12 +102,44 @@ a:hover {
     align-items: center;
 
 }
-#popup-front {
-    width: 200px;
-}
+
 #popup-back {
-    width: 200px;
-
     margin-top: 5rem;
-
 }
+
+
+.headline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: center;
+}
+
+.popupText {
+    padding: 3rem;
+}
+.bodyText {
+    margin-top: -0.8rem;
+}
+
+#popup-size {
+    margin-top: 0.3rem;
+}
+
+.exitButton {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0e9;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-bottom: 0.2rem;
+    cursor: pointer;
+}
+.exitButton:hover {
+    background-color: #dfdfd6;
+}
+
+.buttonAtRight {
+    display: flex;
+    justify-content: space-between;
+}
+

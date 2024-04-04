@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image Popup</title>
 <style>
-/* CSS for the popup */
 .popup {
     display: none;
     position: fixed;
@@ -64,6 +63,7 @@
     <button onclick="closePopup()">Close</button>
 </div>
 
+<!-- javascript  -->
 <script>
 let collection = [
     {
@@ -89,6 +89,26 @@ let collection = [
 let container = document.getElementById("container");
 let overlay = document.getElementById("overlay");
 let popup = document.getElementById("popup");
+
+let popupBackground = document.createElement("img"); 
+
+    function backgroundColor(popupBackground) {
+        // Calculate dead center coordinates
+        var centerX = Math.floor(frontImage.width / 2);
+        var centerY = Math.floor(frontImage.height / 2);
+    
+        useCanvas(canvas, frontImage, function() {
+        var p = canvas.getContext('2d').getImageData(centerX, centerY, 1, 1).data;
+        result.innerHTML = '<span>HEX: ' + rgbToHex(p[0], p[1], p[2]) + '</span><br><br>' +
+            '<span>RGB:  rgb(' +
+            p[0] + ',' +
+            p[1] + ',' +
+            p[2] + ')</span>';
+    
+        document.body.style.background = rgbToHex(p[0], p[1], p[2]);
+        });
+    }
+
 
 for (let i = 0; i < collection.length; i++) {
     let item = collection[i];

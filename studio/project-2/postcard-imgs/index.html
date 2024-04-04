@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unused postcards</title>
+    <link rel="icon" type="image/x-icon" href="favicon1.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,17 +20,28 @@
     <div class="overlay" id="overlay"></div>
 
     <div class="popup" id="popup">
-        <button onclick="closePopup()" class="exitButton">x</button>
+        <div class="buttonAtRight">
+            <div></div>
+            <button onclick="closePopup()" class="exitButton">x</button>
+        </div>
         <!-- front and back img  -->
         <div id="popupImgContainer" class="popupImgContainer">
             <div id="popup-front"></div>
             <div id="popup-back"></div>
+            <!-- <canvas id="myCanvas"></canvas> -->
         </div>
-        <h2 id="popup-name"></h2><span id="popup-size"></span>
-        <p id="popup-theme"></p>
-        <p id="popup-when"></p>
-        <p id="popup-where"></p>
-        <p id="popup-why"></p>
+        <div class="popupText">
+            <div class="headline">
+                <h2 id="popup-name"></h2>
+                <span id="popup-size"></span>
+                <!-- <button>edit</button> -->
+            </div>
+            <div class="bodyText">
+                <p id="popup-when"></p>
+                <p id="popup-where"></p>
+                <p id="popup-why"></p>
+            </div>
+        </div>
     </div>
     
     <script src="script.js" defer></script>

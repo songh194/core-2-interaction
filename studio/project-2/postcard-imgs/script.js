@@ -531,26 +531,22 @@ let collection = [
     }
 ];
 
-let container = document.getElementById("container");
-let overlay = document.getElementById("overlay");
-let popup = document.getElementById("popup");
-let popupImgContainer = document.getElementById("popupImgContainer");
+function extractColor(frontImage) {
+    let canvas = document.createElement('canvas');
+    let context = canvas.getContext('2d');
+    canvas.width = frontImage.width;
+    canvas.height = frontImage.height;
 
-for (let i = 0; i < collection.length; i++) {
-    let item = collection[i];
-    let itemImage = item.front;
-    let newImage = document.createElement("img");
-    newImage.src = itemImage;
-    newImage.classList.add("stacked-image");
-    newImage.addEventListener("click", function() {
-        openPopup(item);
-    });
-    container.appendChild(newImage);
+    context.drawImage(frontImage, 0, 0);
 
-    let rotationAngle = Math.floor(Math.random() * 10) - 5;
-    newImage.style.transform = `rotate(${rotationAngle}deg)`;
+    let x = canvas.width / 2;
+    let y = canvas.height / 2;
+    let pixelData = context.getImageData(x, y, 1, 1).data;
+
+    let hexColor = rgbToHex(pixelData[0], pixelData[1], pixelData[2]);
+
+    return hexColor;
 }
-
 
 function openPopup(item) {
     let frontImage = document.createElement("img");
@@ -565,15 +561,51 @@ function openPopup(item) {
     document.getElementById("popup-back").innerHTML = ""; 
     document.getElementById("popup-back").appendChild(backImage);
 
+    let popup = document.getElementById("popup");
+    let color = extractColor(frontImage);
+    popup.style.backgroundColor = color;
+
     document.getElementById("popup-name").innerText = item.theme;
-    document.getElementById("popup-size").innerText = item.horizontal+ "×" + item.vertical + item.unit;
-    document.getElementById("popup-when").innerText = "When did I get it: " + item.when;
-    document.getElementById("popup-where").innerText = "Where did I get it: " + item.where;
-    document.getElementById("popup-why").innerText = "why did I get it: " + item.why;
+    document.getElementById("popup-size").innerText = "\u00A0\u00A0" + item.horizontal + "×" + item.vertical + item.unit;
+    document.getElementById("popup-when").innerText = "When: " + item.when;
+    document.getElementById("popup-where").innerText = "Where: " + item.where;
+    document.getElementById("popup-why").innerText = "Why: " + item.why;
     popup.style.display = "block";
+
+    let overlay = document.getElementById("overlay");
     overlay.style.display = "block";
+
     frontImage.style.transform = "rotate(-4deg)";
     backImage.style.transform = "rotate(4deg)";
+}
+
+let container = document.getElementById("container");
+let overlay = document.getElementById("overlay");
+let popup = document.getElementById("popup");
+let popupImgContainer = document.getElementById("popupImgContainer");
+let popupBackground = document.getElementById("popupBackground");
+
+for (let i = 0; i < collection.length; i++) {
+    let item = collection[i];
+    let itemImage = item.front;
+    let newImage = document.createElement("img");
+    newImage.src = itemImage;
+    newImage.classList.add("stacked-image");
+    newImage.addEventListener("click", function() {
+        openPopup(item);
+    });
+    container.appendChild(newImage);
+
+    let rotationAngle = Math.floor(Math.random() * 10) - 5;
+    newImage.style.transform = `rotate(${rotationAngle}deg)`;
+
+    newImage.addEventListener("mouseenter", function() {
+        this.style.transform = "translateY(-10px)";
+    });
+    newImage.addEventListener("mouseleave", function() {
+        this.style.transform = "none";
+        newImage.style.transform = `rotate(${rotationAngle}deg)`;
+    });
 }
 
 function closePopup() {
@@ -581,3 +613,23 @@ function closePopup() {
     overlay.style.display = "none";
 }
 
+function rgbToHex(r, g, b) {
+    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
+
+function findPos(obj) {
+    var curleft = 0, curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curleft += obj.offsetLeft;
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+        return { x: curleft, y: curtop };
+    }
+    return undefined;
+}
