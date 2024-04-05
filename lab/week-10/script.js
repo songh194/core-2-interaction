@@ -1,45 +1,23 @@
-// function add(x,y) {
-//     var result = x + y;
-//     console.log(result)
-// }
+// bring css elements
+document.querySelector(.class-name)
 
-// function subtract(x,y) {
-//     var result = x - y;
-//     console.log(result)
-// }
+// make elements
+document.createElement()
 
-// function multiply(x,y) {
-//     var result = x * y;
-//     console.log(result)
-// }
+// throw it in the html
+.appendChild()
 
-function math(x, y, operation) {
-    if (operation === "add") {
-        var result = x + y;
-        console.log(x + " + " + y + " = " + result)
-    }
-    else if (operation === "subtract") {
-        var result = x - y;
-        console.log(x + " - " + y + " = " + result)
-    }
-    else if (operation === "multiply") {
-        var result = x * y;
-        console.log(x + " x " + y + ' = ' + result)
-    }
-    else {
-        console.log("I don't know how to do that.")
-    }
-}
+// precisely put the element
+.insertAdjacentElement()
 
-math(2, 4, "add");
-math(5, 6, "subtract");
+// make new divs when clicked
+var createElementButton = document.querySelector('.create-element-button');
+var myContainer = document.querySelector('.container')
 
-// var fruits = ['apple','banana','pineapple','cherry','orange']
+createElementButton.addEventListener('click',function(){
+    var newDiv = document.createElement('div');
+    newDiv.textContent = 'I am a new div';
 
-// function reverseList(li,number){
-//     for (var i = 0; i < li.length; i++) {
-//         li[i] = li[i].split("").reverse().join()
-//     }
-//     console.log(li[number])
-// }
-// reverseList(fruits,2)
+    myContainer.appendChild(newDiv);
+});
+

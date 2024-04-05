@@ -553,12 +553,14 @@ function openPopup(item) {
     frontImage.src = item.front;
     frontImage.classList.add("popup-image");
     document.getElementById("popup-front").innerHTML = "";
+    frontImage.classList.add('boxShadow')
     document.getElementById("popup-front").appendChild(frontImage);
 
     let backImage = document.createElement("img");
     backImage.src = item.back;
     backImage.classList.add("popup-image");
     document.getElementById("popup-back").innerHTML = ""; 
+    backImage.classList.add('boxShadow')
     document.getElementById("popup-back").appendChild(backImage);
 
     let popup = document.getElementById("popup");
@@ -566,7 +568,7 @@ function openPopup(item) {
     popup.style.backgroundColor = color;
 
     document.getElementById("popup-name").innerText = item.theme;
-    document.getElementById("popup-size").innerText = "\u00A0\u00A0" + item.horizontal + "×" + item.vertical + item.unit;
+    document.getElementById("popup-size").innerText = " ... " + item.horizontal + "×" + item.vertical + item.unit;
     document.getElementById("popup-when").innerText = "When: " + item.when;
     document.getElementById("popup-where").innerText = "Where: " + item.where;
     document.getElementById("popup-why").innerText = "Why: " + item.why;
@@ -595,12 +597,14 @@ for (let i = 0; i < collection.length; i++) {
         openPopup(item);
     });
     container.appendChild(newImage);
+    newImage.classList.add('boxShadow')
 
     let rotationAngle = Math.floor(Math.random() * 10) - 5;
     newImage.style.transform = `rotate(${rotationAngle}deg)`;
 
     newImage.addEventListener("mouseenter", function() {
         this.style.transform = "translateY(-10px)";
+        this.classList.add('easeIn')
     });
     newImage.addEventListener("mouseleave", function() {
         this.style.transform = "none";
