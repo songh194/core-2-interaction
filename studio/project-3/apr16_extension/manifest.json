@@ -1,0 +1,11 @@
+{
+    "manifest_version":3,
+    "name":"Merry Christmas",
+    "version":"1.0",
+    "description": "It's that time of the year!",
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["santahat.js"],
+        "css": ["style.css"]
+    }]
+}
