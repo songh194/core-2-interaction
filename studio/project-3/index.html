@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <title>Digital Subway Ride</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="faviconorangecircle.png">
     </head>
     <body>
         <div class="header">
             <span id="time"></span>
-            <div id="myProgress">
-                <div id="myBar"></div>
+            <div class="progressBarContainer" id="pbc">
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
+                <div class="stop"></div>
             </div>
-            <div id="battery"></div>
+            <div id="battery">19%</div>
+        </div>
+        <div class="mainGrid">
+            <div class="ad1" id="ad1"></div>
+            <div class="ad2" id="ad2"></div>
+            <div class="ad3"id="ad3"></div>
+            <div class="mainContainer">
+                <iframe width="100%" height="100%" frameBorder="0" src="about:blank" title="Iframe Example"></iframe>
+            </div>
+            <div class="ad4"id="ad4"></div>
+        </div>
+        
+        <div class="footer">
+            <div>Core 2 interaction</div>
+            <div>Project 3</div>
+            <div>H. Hannah Song</div>
         </div>
         <script src="script.js"></script>
     </body>
