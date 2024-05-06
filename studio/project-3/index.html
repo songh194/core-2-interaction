@@ -3,15 +3,28 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
-        <title>Digital Subway Ride</title>
+        <title>Google-Yahoo Local</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yarndings+12&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/sxa6umy.css">
         <link rel="icon" type="image/x-icon" href="faviconorangecircle.png">
     </head>
     <body>
+        <!-- popup at first -->
+        <div class="overlay" id="overlay"></div>
+        <div class="popupAd1 popup" id="popup">
+            <div class="buttonAtRight">
+                <div></div>
+                <button onclick="closePopup()" class="exitButton">x</button>
+            </div>
+            <div class="headline">=,+iy</div>
+            <div class="bodytext">opemodwo+=d//sk,.jsdd29<br>32sjdc*3827zwg91jxbci</div>
+        </div>
+        <!-- header -->
         <div class="header">
-            <span id="time"></span>
+            <div></div>
             <div class="progressBarContainer" id="pbc">
                 <div class="stop"></div>
                 <div class="stop"></div>
@@ -34,18 +47,49 @@
                 <div class="stop"></div>
                 <div class="stop"></div>
             </div>
-            <div id="battery">19%</div>
+            <div id="battery"></div>
         </div>
+        <!-- main grid -->
         <div class="mainGrid">
-            <div class="ad1" id="ad1"></div>
-            <div class="ad2" id="ad2"></div>
-            <div class="ad3"id="ad3"></div>
-            <div class="mainContainer">
-                <iframe width="100%" height="100%" frameBorder="0" src="about:blank" title="Iframe Example"></iframe>
+            <div class="ad gradient1" id="ad1" >
+                <div class="buttonAtRight">
+                    <div></div>
+                    <button onclick="closeAd()" class="exitButton">x</button>
+                </div>
+                <div class="bodytext">ooewodwodskjsddsjdsjsfkdsdsj</div>
+                <div class="headline">apdqs...</div>
             </div>
-            <div class="ad4"id="ad4"></div>
+            <div class="ad gradient2" id="ad2">
+                <div class="buttonAtRight">
+                    <div></div>
+                    <button onclick="closeAd()" class="exitButton">x</button>
+                </div>
+                <div class="bodytext">21*-,d0 <br>+_2?r</div>
+            </div>
+            <div class="ad gradient3"id="ad3">
+                <div class="buttonAtRight">
+                    <div></div>
+                    <button onclick="closeAd()" class="exitButton">x</button>
+                </div>
+                <div class="headline">39<br>n+</div>
+                <div class="bodytext">nom_0932<br>+-2dgjks<br>brmjuy+</div>
+            </div>
+            <!-- main container -->
+            <div class="mainContainer gradient4 glow"></div>
+            <div class="iframe">
+                <iframe src="image.jpg" frameborder="0"></iframe>
+            </div>
+            <div class="ad gradient5"id="ad4">
+                <div class="buttonAtRight">
+                    <div></div>
+                    <button onclick="closeAd()" class="exitButton">x</button>
+                </div>
+                <div class="bodytext">me93urb-xc+ <br>mwidjfkqko- <br> mnbfjdk234,</div>
+                <div class="headline">!=</div>
+                <div class="bodytext">ie20-=,.9ieume7 </div>
+            </div>
         </div>
-        
+        <!-- footer -->
         <div class="footer">
             <div>Core 2 interaction</div>
             <div>Project 3</div>
