@@ -11,31 +11,30 @@ function changeDotColor(index) {
         changeDotColor(index + 1); 
     }, 100000);
 }
-changeDotColor(0);
 
 
 
 let stops = [
-  {'Google Maps': "https://www.google.com/maps"},
-  {'Google':"https://www.google.com"},
-  {'Wallmart':'https://www.walmart.com'},
+  {'Google Maps': "googlemaps.png"},
+  {'Google':"google.jpg"},
+  {'Walmart':'walmart.png'},
   {'NFL':'https://www.nfl.com'},
-  {'Google Translate':'https://translate.google.com'},
-  {'Weather':'https://www.weather.com'},
-  {"Instagram":'https://www.instagram.com'},
-  {"ChatGPT":'https://chat.openai.com'},
-  {'WhatsApp':'https://www.whatsapp.com'},
-  {'Amazon':'https://www.amazon.com'},
-  {'Twitter':'https://twitter.com'},
-  {'Facebook':'https://www.facebook.com'},
-  {'Gmail':'https://mail.google.com'},
-  {'Netflix':'https://www.netflix.com'},
-  {'Wordle':'https://www.nytimes.com/games/wordle'},
-  {'Reddit':'https://www.reddit.com'},
-  {'YouTube':'https://www.youtube.com'},
+  {'Google Translate':'googletranslate.jpg'},
+  {'Weather':'weather.png'},
+  {"Instagram":'instagram.png'},
+  {"ChatGPT":'chatgpt.png'},
+  {'WhatsApp':'whatsapp.png'},
+  {'Amazon':'amazaon.png'},
+  {'Twitter':'twitter.jpg'},
+  {'Facebook':'facebook.jpg'},
+  {'Gmail':'gmail.jpg'},
+  {'Netflix':'netflix.jpg'},
+  {'Wordle':'wordle.png'},
+  {'Reddit':'reddit.png'},
+  {'YouTube':'youtube.jpg'},
   {'Wikipedia':'https://www.wikipedia.org'},
-  {'TikTok':'https://www.tiktok.com'},
-  {'Yahoo':'https://www.yahoo.com'}
+  {'TikTok':'tiktok.jpg'},
+  {'Yahoo':'yahoo.png'}
 ]
 
 function displayStops() {
@@ -53,7 +52,21 @@ function displayStops() {
   const iframeElement = document.querySelector('.iframe iframe');
   iframeElement.src = value;
 
+  iframeElement.onload = function() {
+      // Access the content of the iframe
+      const iframeDocument = iframeElement.contentDocument || iframeElement.contentWindow.document;
+      // Find all images inside the iframe
+      const images = iframeDocument.querySelectorAll('img');
+      // Set the height of each image to 100% to fit it into the iframe
+      images.forEach(image => {
+          image.style.height = '100%';
+      });
+  };
+
   stopContainer.appendChild(stopKeyElement);
+
+  // Call changeDotColor function with the current index
+  changeDotColor(currentIndex);
 
   displayStops.index = (currentIndex + 1) % stops.length;
 
@@ -62,27 +75,39 @@ function displayStops() {
   let blinkToggle = true;
   let blinkInterval;
   blinkInterval = setInterval(() => {
-    if (blinkToggle) {
-      stopKeyElement.style.fontFamily = '"bitcount-mono-single-square", sans-serif';
-    } else {
-      stopKeyElement.style.fontFamily = '"bitcount-mono-single-line-sq", sans-serif';
-    }
-    blinkToggle = !blinkToggle;
-    blinkCount--;
-    if (blinkCount === 0 || linkElement.style.pointerEvents === "none") {
-      clearInterval(blinkInterval);
-    }
+      if (blinkToggle) {
+          stopKeyElement.style.fontFamily = '"bitcount-mono-single-square", sans-serif';
+      } else {
+          stopKeyElement.style.fontFamily = '"bitcount-mono-single-line-sq", sans-serif';
+      }
+      blinkToggle = !blinkToggle;
+      blinkCount--;
+      if (blinkCount === 0 || linkElement.style.pointerEvents === "none") {
+          clearInterval(blinkInterval);
+      }
   }, blinkDuration);
 
   setTimeout(() => {
-    clearInterval(blinkInterval); // Stop blinking animation after 5 seconds
-    stopKeyElement.style.fontFamily = '"Yarndings 12", system-ui'; // Reset to default font
-    stopKeyElement.classList.add('inbetweenStops'); // Apply the 'inbetweenStops' class
+      clearInterval(blinkInterval); 
+      stopKeyElement.style.fontFamily = '"Yarndings 12", system-ui'; 
+      stopKeyElement.classList.add('inbetweenStops'); 
+
+      iframeElement.style.display = 'block';
+
+      setTimeout(() => {
+          iframeElement.style.display = 'none';
+      }, 4000); // Adjusted timing, value items will be hidden after 4 seconds
+
+      // Call displayStops again after the same timing as the key item change
+      setTimeout(displayStops, 100000); // Adjust this timing to match the key item change
   }, 5000);
 }
 
-displayStops(0);
 
+
+displayStops();
+
+// displayStops(0);
 
 
 
@@ -97,11 +122,14 @@ function closePopup() {
     overlay.style.display = "none";
 }
 
-function closeAd() {
-    let ads = document.getElementsByClassName("ad");
-    for (let i = 0; i < ads.length; i++) {
-        ads[i].classList.add("closedAd");
-    }
+function closeAd(adId) {
+  let ad = document.getElementById(adId);
+  if (ad) {
+      ad.classList.add("closedAd");
+      ad.textContent = "";
+  }
 }
+
+
 
 

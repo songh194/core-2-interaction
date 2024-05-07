@@ -42,6 +42,7 @@ img {
 .box {
     font-family: "bitcount-mono-single-square", sans-serif;
     font-size: 2rem;
+    text-decoration: none;
     display: flex;
     justify-content: space-between;
     height: 3rem;
@@ -51,8 +52,29 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 3px;
-}
-.orange {
+
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    
+
+  }
+  
+
+  @keyframes animate-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  
+  
+#orange {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -63,3 +85,43 @@ img {
 .yahoo {
     display:flex;
 }
+
+.text {
+    animation: blink 1.5s linear infinite; 
+    animation-delay: 3s;
+}
+
+@keyframes blink{ 
+    0%{ 
+      opacity: 0; 
+    } 
+    50%{ 
+      opacity: 0.7; 
+    } 
+    100%{ 
+      opacity: 0; 
+    } 
+  }
+
+
+.box:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

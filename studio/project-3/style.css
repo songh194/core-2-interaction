@@ -35,7 +35,7 @@ body {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
-  margin-top: -2rem;
+  margin-top: -3rem;
 }
 
 .progressBarContainer {
@@ -65,8 +65,10 @@ body {
   background-color: darkorange;
 }
 .closedAd {
-  background-color: #969696;
+  background-color: #d4d4d4 !important;
+  color: #d4d4d4 !important;
 }
+
 
 .mainGrid {
   width:100%;
@@ -117,13 +119,29 @@ body {
 
   .iframe {
     grid-area: 4 / 3 / 9 / 8;
-    background-color: #1e3ad9;
+    background-color: #A0CAEE;
     border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
     iframe{
- 
+      width: 100%;
+      height: 100%;
       object-fit: contain;
+      display: block;
+
     }
   }
+  .wavefont {
+    font-family: "Wavefont", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 100,
+      "YELA" -100;
+  }
+  
 
   #ad4 {
     grid-area:3 / 8 / 9 / 10;
@@ -282,3 +300,6 @@ body {
   font-size: 5rem;
 }
 
+img {
+  height: 100%;
+}
