@@ -53,11 +53,8 @@ function displayStops() {
   iframeElement.src = value;
 
   iframeElement.onload = function() {
-      // Access the content of the iframe
       const iframeDocument = iframeElement.contentDocument || iframeElement.contentWindow.document;
-      // Find all images inside the iframe
       const images = iframeDocument.querySelectorAll('img');
-      // Set the height of each image to 100% to fit it into the iframe
       images.forEach(image => {
           image.style.height = '100%';
       });
@@ -65,13 +62,12 @@ function displayStops() {
 
   stopContainer.appendChild(stopKeyElement);
 
-  // Call changeDotColor function with the current index
   changeDotColor(currentIndex);
 
   displayStops.index = (currentIndex + 1) % stops.length;
 
   const blinkDuration = 500; // milliseconds
-  const blinkCount = 20; // Number of times to blink
+  const blinkCount = 20; 
   let blinkToggle = true;
   let blinkInterval;
   blinkInterval = setInterval(() => {
@@ -96,10 +92,9 @@ function displayStops() {
 
       setTimeout(() => {
           iframeElement.style.display = 'none';
-      }, 4000); // Adjusted timing, value items will be hidden after 4 seconds
+      }, 4000); 
 
-      // Call displayStops again after the same timing as the key item change
-      setTimeout(displayStops, 100000); // Adjust this timing to match the key item change
+      setTimeout(displayStops, 100000); 
   }, 5000);
 }
 
@@ -107,7 +102,6 @@ function displayStops() {
 
 displayStops();
 
-// displayStops(0);
 
 
 
